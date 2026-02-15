@@ -1,16 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Assingment</h1>
+    <title>Shope</title>
+    <!-- DaisyUI + Tawilwind -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- FontAwsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+
+</head>
+
+<body>
+    <header class="w-11/12 mx-auto">
+        <div class="navbar">
+            <div class="navbar-start">
+                <a class="btn btn-ghost text-blue-700 text-3xl font-bold">
+                    SwiftCart
+                </a>
+            </div>
+
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li class="text-xl font-semibold"><a href="">Home</a></li>
+                    <li class="text-xl font-semibold"><a href="">Products</a></li>
+                    <li class="text-xl font-semibold"><a href="">About</a></li>
+                    <li class="text-xl font-semibold"><a href="">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="navbar-end flex items-center gap-4">
+                <a href="" class="text-xl">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </a>
+
+                <!-- Hidden  -->
+                <div class="dropdown dropdown-end lg:hidden">
+                    <div tabindex="0" class="btn btn-ghost">
+                        <i class="fa-solid fa-bars text-xl"></i>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3  p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Products</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+       <section class="relative h-[90vh] bg-cover bg-center"
+    style="background-image: url('./Asset/banner-image.png');">
+
+    <div class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-transparent"></div>
+
+    <div class="relative h-full flex items-center">
+        <div class="w-11/12 mx-auto">
+            <div class="max-w-xl text-white">
+                
+                <h1 class="text-4xl md:text-6xl font-bold mb-6">
+                    Best Collection For You
+                </h1>
+
+                <p class="text-lg md:text-xl text-gray-200 mb-8">
+                    Discover the latest trends in fashion, electronics, and more. 
+                    Shop with confidence and style at SwiftCart.
+                </p>
+
+                <button class="px-6 py-3 rounded-lg bg-blue-700 hover:bg-blue-800 text-white font-semibold">
+                    Shop Now
+                </button>
+
+            </div>
+        </div>
+    </div>
+
+</section>
+
+    </main>
 
 
 
     <script src="index.js"></script>
 </body>
+
 </html>
