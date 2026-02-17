@@ -50,7 +50,7 @@ const displayTrendingProduct = (products) => {
         const cardDiv = document.createElement("div");
         cardDiv.className = "p-4 rounded-xl shadow-sm";
         cardDiv.innerHTML = `
-        <div class="bg-white rounded-xl shadow-md p-5 flex flex-col h-full">
+        <div class="p-5 flex flex-col h-full">
     <div class="bg-gray-200 rounded-lg p-5 flex justify-center">
         <img src="${product.image}" class="h-40 object-contain">
     </div>
